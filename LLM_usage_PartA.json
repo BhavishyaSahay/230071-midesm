@@ -1,0 +1,121 @@
+{
+    "student_metadata": {
+      "name": "Bhavishya Sahay",
+      "roll_number": "230071",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part A",
+      "submission_date": "2026-03-02"
+    },
+  
+    "llm_tools_used": [
+      {
+        "tool_name": "ChatGPT",
+        "model": "GPT-4",
+        "provider": "OpenAI"
+      }
+    ],
+  
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-01",
+        "tool_name": "ChatGPT",
+        "model": "GPT-4",
+        "purpose": "Verifying whether 'Gaussian Mixture Model with Local Consistency' satisfies venue and year constraints.",
+        "prompt": "Does the paper 'Gaussian Mixture Model with Local Consistency' published in AAAI 2010 satisfy the CORE A* and 2009–2012 constraints?",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Confirmed that AAAI is a CORE A* venue and that 2010 falls within the allowed year range.",
+        "student_verification": "I manually verified AAAI ranking using the CORE 2010 list and confirmed publication year from official proceedings.",
+        "confidence_level": 5
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-01",
+        "tool_name": "ChatGPT",
+        "model": "GPT-4",
+        "purpose": "Checking whether the paper aligns with the allowed algorithm categories.",
+        "prompt": "Does 'Gaussian Mixture Model with Local Consistency' fall under GMM or EM-based clustering according to the AML constraints?",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Confirmed that the primary contribution is based on Gaussian Mixture Models and EM-based clustering.",
+        "student_verification": "I read the abstract and methodology section to confirm that the contribution is methodological and GMM-based.",
+        "confidence_level": 5
+      },
+      {
+        "interaction_id": 3,
+        "date": "2026-03-01",
+        "tool_name": "ChatGPT",
+        "model": "GPT-4",
+        "purpose": "Evaluating reproducibility feasibility on a CPU-only laptop.",
+        "prompt": "Can the Gaussian Mixture Model with Local Consistency (AAAI 2010) be implemented and tested on a CPU-only setup using scikit-learn or similar classical ML libraries?",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Helped assess computational complexity and feasibility of implementing GMM with local consistency constraints without GPU.",
+        "student_verification": "I reviewed the algorithmic steps and confirmed that GMM with EM can be implemented using NumPy and scikit-learn on a laptop.",
+        "confidence_level": 4
+      },
+      {
+        "interaction_id": 4,
+        "date": "2026-03-02",
+        "tool_name": "ChatGPT",
+        "model": "GPT-4",
+        "purpose": "Ensuring the paper's contribution is methodological rather than dataset/system focused.",
+        "prompt": "Is the primary contribution of 'Gaussian Mixture Model with Local Consistency' methodological, or is it mainly dataset/system oriented?",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Confirmed that the core contribution is a modification of the GMM objective incorporating local consistency regularization.",
+        "student_verification": "I checked the problem formulation and objective function in the paper to confirm methodological novelty.",
+        "confidence_level": 5
+      },
+      {
+        "interaction_id": 5,
+        "date": "2026-03-02",
+        "tool_name": "ChatGPT",
+        "model": "GPT-4",
+        "purpose": "Final compliance check before submission.",
+        "prompt": "Does selecting 'Gaussian Mixture Model with Local Consistency' (AAAI 2010) fully satisfy all AML Part A constraints including venue, year, method category, compute feasibility, and dataset requirements?",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Provided a structured checklist-style validation across all mandatory constraints.",
+        "student_verification": "I re-read the AML instructions and cross-validated each requirement independently before finalizing.",
+        "confidence_level": 5
+      }
+    ],
+  
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 5,
+        "prompt": "Does selecting 'Gaussian Mixture Model with Local Consistency' (AAAI 2010) fully satisfy all AML Part A constraints?",
+        "why_important": "Ensured complete compliance with venue, year, methodology, and reproducibility requirements before submission."
+      },
+      {
+        "rank": 2,
+        "interaction_id": 1,
+        "prompt": "Does the paper satisfy CORE A* and 2009–2012 constraints?",
+        "why_important": "Prevented potential disqualification due to venue or year mismatch."
+      },
+      {
+        "rank": 3,
+        "interaction_id": 2,
+        "prompt": "Does the paper fall under GMM or EM-based clustering?",
+        "why_important": "Confirmed alignment with the allowed classical ML categories."
+      },
+      {
+        "rank": 4,
+        "interaction_id": 3,
+        "prompt": "Can this paper be reproduced on a CPU-only setup?",
+        "why_important": "Ensured feasibility within laptop-only computational constraints."
+      },
+      {
+        "rank": 5,
+        "interaction_id": 4,
+        "prompt": "Is the contribution methodological rather than dataset/system focused?",
+        "why_important": "Validated compliance with the nature-of-contribution requirement."
+      }
+    ],
+  
+    "student declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+      "understanding acknowledged": true,
+      "signature": "Bhavishya Sahay",
+      "date": "2026-03-02"
+    }
+  }
