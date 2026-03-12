@@ -1,0 +1,48 @@
+{
+  "student_metadata": {
+    "name": "Bhavishya Sahay",
+    "roll_number": "230071",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+  "task_tag": "Task 4.2",
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-08",
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "task_tag": "Task 4.2",
+      "purpose": "Verifying the JSON LLM disclosure format matches Part B requirements.",
+      "prompt": "Does my LLM disclosure JSON include task_tag, code_used_verbatim, and student_modification fields for each interaction?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Confirmed all required fields were present; suggested adding explicit false for code_used_verbatim even when N/A.",
+      "student_verification": "Reviewed all JSON files and confirmed all required fields present.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Does my LLM disclosure JSON include task_tag, code_used_verbatim, and student_modification fields for each interaction?",
+      "why_important": "Confirmed all required fields were present; suggested adding explicit false for code_used_verbatim even when N/A."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Bhavishya Sahay",
+    "date": "2026-03-08"
+  }
+}

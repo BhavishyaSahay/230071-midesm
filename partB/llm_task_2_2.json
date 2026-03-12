@@ -1,0 +1,90 @@
+{
+  "student_metadata": {
+    "name": "Bhavishya Sahay",
+    "roll_number": "230071",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+  "task_tag": "Task 2.2",
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "task_tag": "Task 2.2",
+      "purpose": "Debugging log_gaussian returning -inf for some covariance matrices.",
+      "prompt": "Why might np.linalg.slogdet(Sigma) return a non-positive sign during GMM EM iteration?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Identified that non-positive-definite covariance matrices arise from the regulariser correction in LCGMM and suggested adding a small identity regulariser.",
+      "student_verification": "Added REG=1e-4 diagonal regularisation to Sigma in M-step; confirmed matrices became positive definite.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-07",
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "task_tag": "Task 2.2",
+      "purpose": "Understanding the Kuhn-Munkres Hungarian algorithm for clustering accuracy.",
+      "prompt": "How do I use scipy.optimize.linear_sum_assignment to compute clustering accuracy with label permutation?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Provided the cost matrix construction pattern (count matrix + negative sign for maximisation).",
+      "student_verification": "Tested on toy example with known permutation; verified it finds the correct mapping.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-07",
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "task_tag": "Task 2.2",
+      "purpose": "Implementing the M-step regularisation correction for mu and Sigma.",
+      "prompt": "Implement the M-step update for mu_k in LCGMM (Eq. 13) including the kNN regularisation correction in NumPy.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Provided initial loop structure; I modified it to correctly accumulate (rk[i]-rk[j])*(X[i]-X[j]) per edge.",
+      "student_verification": "Verified that when lambda=0 the correction is zero and the update reduces to standard GMM mean formula.",
+      "code_used_verbatim": false,
+      "student_modification": "Modified the regularisation weight logic and loop indexing to match Eq.(13) exactly.",
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Why might np.linalg.slogdet(Sigma) return a non-positive sign during GMM EM iteration?",
+      "why_important": "Identified that non-positive-definite covariance matrices arise from the regulariser correction in LCGMM and suggested adding a small identity regulariser."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "How do I use scipy.optimize.linear_sum_assignment to compute clustering accuracy with label permutation?",
+      "why_important": "Provided the cost matrix construction pattern (count matrix + negative sign for maximisation)."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "Implement the M-step update for mu_k in LCGMM (Eq. 13) including the kNN regularisation correction in NumPy.",
+      "why_important": "Provided initial loop structure; I modified it to correctly accumulate (rk[i]-rk[j])*(X[i]-X[j]) per edge."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Bhavishya Sahay",
+    "date": "2026-03-08"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "student_metadata": {
+    "name": "Bhavishya Sahay",
+    "roll_number": "230071",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+  "task_tag": "Task 2.3",
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "ChatGPT",
+      "model": "GPT-4",
+      "task_tag": "Task 2.3",
+      "purpose": "Explaining the performance gap between our LCGMM result and the paper's results.",
+      "prompt": "LCGMM gets 93.8% on Wine but the paper reports 73.6% on MNIST. How can I explain this difference honestly?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Noted that the datasets differ fundamentally \u2014 MNIST has 10 classes and 784 features vs Wine's 3 classes and 13 features.",
+      "student_verification": "Verified that datasets are different and there is no equivalent number in the paper for Wine.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "LCGMM gets 93.8% on Wine but the paper reports 73.6% on MNIST. How can I explain this difference honestly?",
+      "why_important": "Noted that the datasets differ fundamentally \u2014 MNIST has 10 classes and 784 features vs Wine's 3 classes and 13 features."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Bhavishya Sahay",
+    "date": "2026-03-08"
+  }
+}
